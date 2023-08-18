@@ -56,6 +56,28 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "local": {
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "50mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -68,6 +90,9 @@
             },
             "development": {
               "browserTarget": "analyst-playground-frontend:build:development"
+            }, 
+            "local": {
+              "browserTarget": "analyst-playground-frontend:build:local"
             }
           },
           "defaultConfiguration": "development"

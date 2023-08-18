@@ -8,19 +8,18 @@ import * as webMercatorUtils from '@arcgis/core/geometry/support/webMercatorUtil
 import Graphic from '@arcgis/core/Graphic';
 import * as geometryEngine from '@arcgis/core/geometry/geometryEngine';
 import Point from '@arcgis/core/geometry/Point';
- 
 
 // https://developers.arcgis.com/javascript/latest/api-reference/
 // https://angular.io/guide/lifecycle-hooks
 // http://www.jxgis.cn:8080/arcgis_js_v48_api/arcgis_js_api/sdk/sample-code/draw-measure/index.html
 // https://developers.arcgis.com/javascript/latest/find-length-and-area/
-  
+
 @Component({
     selector: 'app-dashboard',
     templateUrl: './dashboard.component.html',
     styleUrls: ['./dashboard.component.scss'],
 })
-export class DashboardComponent implements OnInit { 
+export class DashboardComponent implements OnInit {
     polyExtent?: any;
     polyArea?: any;
     areaType?: any;
@@ -64,7 +63,7 @@ export class DashboardComponent implements OnInit {
         console.log(this.polyExtent, Math.round(this.polyArea) + ' acres');
     }
     loadMap() {
-        console.log('loading Map.....');
+        console.log('loading Map.....', 'Hi Ethan!!!!');
         const vm = this;
         const graphicsLayer = new GraphicsLayer();
         const map = new Map({
