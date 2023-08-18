@@ -1,0 +1,19 @@
+@import "https://js.arcgis.com/4.25/@arcgis/core/assets/esri/themes/light/main.css";
+
+html,
+body,
+#application-body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 50%;
+        border: 1px solid black;
+        flex-grow: 1;
+    } 
+}
